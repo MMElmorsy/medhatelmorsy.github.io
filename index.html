@@ -111,13 +111,38 @@
   </div>
 
 <footer>
-  <p>© 2026 Medhat Elmorsy</p>
-  <p>
-    Email: <a href="mailto:medhat.elmorsy@ibk.baug.ethz.ch">medhat.elmorsy@ibk.baug.ethz.ch</a><br>
-    ETH Zurich · Institute of Structural Engineering (IBK)<br>
-    Office: HIL E 12.1, Stefano-Franscini-Platz 5, 8093 Zürich, Switzerland
-  </p>
+  <div class="footer-container">
+
+    <!-- LEFT: Contact Details -->
+    <div class="footer-left">
+      <p><strong>© 2026 Medhat Elmorsy</strong></p>
+      <p>
+        Email: <a href="mailto:medhat.elmorsy@ibk.baug.ethz.ch">medhat.elmorsy@ibk.baug.ethz.ch</a><br>
+        ETH Zurich · Institute of Structural Engineering (IBK)<br>
+        Office: HIL E 12.1, Stefano-Franscini-Platz 5<br>
+        8093 Zürich, Switzerland
+      </p>
+    </div>
+
+    <!-- RIGHT: Contact Form -->
+    <div class="footer-right">
+      <form class="footer-form" action="https://formspree.io/f/yourFormID" method="POST">
+        <label>Your Name</label>
+        <input type="text" name="name" required>
+
+        <label>Your Email</label>
+        <input type="email" name="email" required>
+
+        <label>Message</label>
+        <textarea name="message" rows="3" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+  </div>
 </footer>
+
 
 </body>
 </html>
