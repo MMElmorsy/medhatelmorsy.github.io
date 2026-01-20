@@ -25,45 +25,78 @@
     </ul>
   </nav>
 
-  <section class="profile">
-    <img src="photo.jpg" alt="Medhat Elmorsy">
-    <p>
-      I am a postdoctoral researcher at ETH Zurich working at the intersection of 
-      <strong>earthquake engineering, structural dynamics, and digital construction</strong>.
-      My research focuses on system-level uncertainty, additive manufacturing for physical modeling,
-      and the development of benchmark datasets for seismic model validation.
-      I am the recipient of the <strong>Swiss National Science Foundation Postdoc.Mobility Grant</strong>
-      (CHF 186,666) and will conduct my postdoctoral research at MIT.
-    </p>
-  </section>
+  <!-- ====== MAIN LAYOUT WRAPPER ====== -->
+  <div class="container">
 
-  <section>
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Earthquake engineering and seismic risk</li>
-      <li>System-level uncertainty and model validation</li>
-      <li>Additive manufacturing for physical modeling</li>
-      <li>Performance-based and resilience-based design</li>
-      <li>Experimental and numerical analysis of RC and URM structures</li>
-    </ul>
-  </section>
+    <!-- ====== LEFT COLUMN ====== -->
+    <div class="main-content">
+
+      <section>
+        <h2>Welcome</h2>
+        <p>
+          I am a postdoctoral researcher at ETH Zurich working at the intersection of 
+          <strong>earthquake engineering, structural dynamics, and digital construction</strong>.
+          My work focuses on system-level uncertainty, additive manufacturing for physical modeling,
+          and the development of benchmark datasets for seismic model validation.
+        </p>
+      </section>
+
+      <section>
+        <h2>News</h2>
+        <ul class="news-list">
+          <li><strong>Jan 2026:</strong> Preparing to start my SNSF Postdoc.Mobility fellowship at MIT.</li>
+          <li><strong>Dec 2025:</strong> Our URM centrifuge dataset accepted in <em>Earthquake Spectra</em>.</li>
+          <li><strong>Nov 2025:</strong> Two new papers published in the <em>Journal of Structural Engineering</em>.</li>
+          <li><strong>Oct 2025:</strong> Completed experimental campaign on AM-based RC columns.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Recent Publications</h2>
+        <ul class="publications">
+          <li>Elmorsy, M., Vamvatsikos, D. (2025). Impact of Beam-Column Joint Modeling Uncertainties... EQE.</li>
+          <li>Elmorsy, M., Leinenbach, C., Vassiliou, M.F. (2025). Cyclic behavior of AM-based RC columns... JSE.</li>
+          <li>Elmorsy, M., Jones, L., Wild, M., et al. (2026). URM Centrifuge Dataset... Earthquake Spectra.</li>
+        </ul>
+        <p><a href="research-and-publications.html">Full publication list →</a></p>
+      </section>
+
+    </div>
+
+    <!-- ====== RIGHT SIDEBAR ====== -->
+    <aside class="sidebar">
+
+      <img src="photo.jpg" alt="Medhat Elmorsy" class="sidebar-photo">
+
+      <h3>Quick Links</h3>
+      <ul class="sidebar-links">
+        <li><a href="cv.pdf" target="_blank">Download CV</a></li>
+        <li><a href="https://scholar.google.com" target="_blank">Google Scholar</a></li>
+        <li><a href="#" target="_blank">ORCID</a></li>
+        <li><a href="#" target="_blank">GitHub</a></li>
+        <li><a href="#" target="_blank">LinkedIn</a></li>
+      </ul>
+
+      <h3>Featured Project</h3>
+      <img src="project.jpg" alt="Featured Project" class="sidebar-photo">
+      <p><a href="research-and-publications.html">Learn more →</a></p>
+
+      <h3>Visitors</h3>
+      <p>Total visitors: <span id="visitors"></span></p>
+
+      <script>
+        fetch('https://api.countapi.xyz/hit/medhat-elmorsy-website/visits')
+          .then(r => r.json())
+          .then(d => document.getElementById('visitors').innerText = d.value);
+      </script>
+
+    </aside>
+
+  </div>
 
   <footer>
     © 2026 Medhat Elmorsy
   </footer>
 
-  <p>Total visitors: <span id="visitors"></span></p>
-
-<script>
-  fetch('https://api.countapi.xyz/hit/medhatelmorsy.com/visits')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('visitors').innerText = data.value;
-    });
-</script>
-
-  
 </body>
 </html>
-
-
