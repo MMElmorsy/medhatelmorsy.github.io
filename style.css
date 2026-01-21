@@ -261,15 +261,10 @@ footer {
 }
 
 .icon {
-  width: 24px;
+  width: auto;
   height: 24px;
   vertical-align: middle;
   margin-right: 8px;
 }
 
-.icon1 {
-  width: 80px;
-  height: 32px;
-  vertical-align: middle;
-  margin-right: 8px;
-}
+
