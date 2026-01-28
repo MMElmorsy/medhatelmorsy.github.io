@@ -175,7 +175,7 @@ footer {
 }
 
 .news-image {
-  width: 180px;
+  width: auto;
   height: auto;
   object-fit: cover;
   border-radius: 4px;
