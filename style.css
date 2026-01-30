@@ -262,7 +262,7 @@ footer {
 
 .timeline-container {
   max-width: 100%;
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 1rem;
   background-color: transparent;
   border: none;
