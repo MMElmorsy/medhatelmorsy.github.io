@@ -1,69 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Medhat Elmorsy</title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/jpeg" href="logo.jpeg">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV — Medhat Elmorsy</title>
+<meta name="description" content="Curriculum vitae of Medhat Elmorsy: appointments, education, funding, professional service, and technical skills, with a downloadable PDF.">
+<link rel="canonical" href="https://www.medhatelmorsy.com/cv.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="alternate icon" type="image/jpeg" href="logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Curriculum Vitae</h1>
-    <p class="subtitle">Downloadable PDF</p>
-  </header>
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research-and-publications.html">Research & Publications</a></li>
-      <li><a href="teaching.html">Teaching</a></li>
-      <li><a href="cv.html">CV</a></li>
-    </ul>
-  </nav>
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="wordmark" href="index.html">Medhat Elmorsy<span>Earthquake Engineering · MIT</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research-and-publications.html">Research &amp; Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="cv.html" aria-current="page">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<header class="page-head">
+  <div class="page-head-inner">
+    <h1>Curriculum Vitae</h1>
+    <p>Summary below; the full CV, including the complete publication list, is available as a PDF.</p>
+  </div>
+</header>
+
+<main class="wrap" id="main" style="padding-top:3rem">
+
+  <div class="cv-actions">
+    <a class="button" href="cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+    <a class="button secondary" href="research-and-publications.html">See publications</a>
+  </div>
 
   <section>
-    <h2>Download CV</h2>
-    <p><a href="cv.pdf" target="_blank">Click here to download the full CV (PDF)</a></p>
-
-    <h2>Preview</h2>
-    <iframe src="cv.pdf" width="100%" height="800px"></iframe>
+    <h2>Appointments</h2>
+    <div class="entry">
+      <h3>Postdoctoral Fellow &mdash; Massachusetts Institute of Technology</h3>
+      <p class="meta">Cambridge, MA · April 2026 &ndash; present</p>
+      <p>SNSF Postdoc.Mobility fellow working on topology optimization for seismic load path design and physical
+         prototyping using additive manufacturing and robotic fabrication.</p>
+    </div>
+    <div class="entry">
+      <h3>Postdoctoral Researcher &mdash; ETH Zurich</h3>
+      <p class="meta">Zurich, Switzerland · January 2026 &ndash; March 2026</p>
+      <p>Continued doctoral research on experimental&ndash;numerical frameworks for validating structural models.</p>
+    </div>
+    <div class="entry">
+      <h3>Scientific Assistant (doctoral researcher) &mdash; ETH Zurich</h3>
+      <p class="meta">Zurich, Switzerland · January 2022 &ndash; December 2025</p>
+      <p>Developed a methodology combining additive manufacturing with centrifuge shake table testing to generate
+         experimental benchmark datasets for probabilistic model validation, integrating testing, OpenSees
+         simulation, and uncertainty propagation.</p>
+    </div>
+    <div class="entry">
+      <h3>Structural Design Engineer (part-time) &mdash; Hamed Askar Consulting</h3>
+      <p class="meta">Mansoura, Egypt · 2016 &ndash; 2018</p>
+      <p>Analysis and design of reinforced concrete residential buildings and water treatment storage tanks,
+         including wind and seismic load analysis.</p>
+    </div>
   </section>
 
-  <footer>
-  <div class="footer-container">
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <h3>Doctor of Science, ETH Zurich</h3>
+      <p class="meta">2025 · Advisor: Prof. Michalis Vassiliou</p>
+      <p>System-level uncertainty in earthquake engineering: numerical investigation and AM-based physical
+         modeling for benchmark data generation.</p>
+    </div>
+    <div class="entry">
+      <h3>M.S. in Civil Engineering (Structures), University of Alaska Anchorage</h3>
+      <p class="meta">2021 · Advisor: Assoc. Prof. Wael M. Hassan</p>
+      <p>Nonlinear modeling parameters for beam-column joints in seismic analysis of concrete buildings.</p>
+    </div>
+    <div class="entry">
+      <h3>M.S. in Structural Engineering, Mansoura University</h3>
+      <p class="meta">2021 (part-time)</p>
+      <p>Performance-based seismic assessment of buildings with curved shear walls.</p>
+    </div>
+    <div class="entry">
+      <h3>B.S. (Honors) in Civil Engineering, Mansoura University</h3>
+      <p class="meta">2016 · Ranked 1st of approximately 750 civil engineering students</p>
+    </div>
+  </section>
 
-    <!-- LEFT: Contact Details -->
+  <section>
+    <h2>Funding and awards</h2>
+    <div class="entry">
+      <h3>Postdoc.Mobility Fellowship, Swiss National Science Foundation</h3>
+      <p class="meta">2026 &ndash; 2028 · CHF 186,666 · Role: applicant and principal investigator</p>
+      <p>Advanced seismic topology optimization and physical prototyping of reinforced concrete structures using
+         additive manufacturing and robotic techniques. Host institution: MIT.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional service</h2>
+    <ul class="plain">
+      <li><strong>Journal reviewer</strong> &mdash; ASCE Journal of Structural Engineering; Journal of Building
+          Engineering; Bulletin of Earthquake Engineering; Engineering Structures; Journal of Engineering
+          Mechanics; Journal of Architectural Engineering.</li>
+      <li><strong>Organizing committee</strong> &mdash; PEER Blind Prediction Competition, Pacific Earthquake
+          Engineering Research Center, UC Berkeley, 2025.</li>
+      <li><strong>Organizing committee volunteer</strong> &mdash; IASS Symposium, Zurich, 2024.</li>
+      <li><strong>Member</strong> &mdash; Earthquake Engineering Research Institute (EERI); American Society of
+          Civil Engineers (ASCE).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Technical skills and languages</h2>
+    <ul class="plain">
+      <li><strong>Programming</strong> &mdash; MATLAB, Python.</li>
+      <li><strong>Nonlinear analysis</strong> &mdash; OpenSees, ABAQUS, CSI Perform-3D.</li>
+      <li><strong>Structural analysis and design</strong> &mdash; SAP2000, ETABS, SAFE.</li>
+      <li><strong>Design and fabrication</strong> &mdash; AutoCAD, Autodesk Inventor, Inkscape; additive
+          manufacturing workflows.</li>
+      <li><strong>Languages</strong> &mdash; Arabic (native), English (fluent), German (B2).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Full CV</h2>
+    <iframe class="cv-frame" src="cv.pdf" title="Curriculum vitae of Medhat Elmorsy (PDF)"></iframe>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-container">
     <div class="footer-left">
-      <p><strong>© 2026 Medhat Elmorsy</strong></p>
+      <h2>Get in touch</h2>
       <p>
-        Email: <a href="mailto:medhat.elmorsy@ibk.baug.ethz.ch">medhat.elmorsy@ibk.baug.ethz.ch</a><br>
-        ETH Zurich · Institute of Structural Engineering (IBK)<br>
-        Office: HIL E 12.1, Stefano-Franscini-Platz 5<br>
-        8093 Zürich, Switzerland
+        Department of Civil and Environmental Engineering<br>
+        Massachusetts Institute of Technology<br>
+        77 Massachusetts Avenue, Cambridge, MA 02139, USA<br>
+        <a href="mailto:melmorsy@mit.edu">melmorsy@mit.edu</a>
       </p>
     </div>
-
-    <!-- RIGHT: Contact Form -->
     <div class="footer-right">
       <form class="footer-form" action="https://formspree.io/f/mvzzbkrk" method="POST">
-        <label>Your Name</label>
-        <input type="text" name="name" required>
-
-        <label>Your Email</label>
-        <input type="email" name="email" required>
-
-        <label>Message</label>
-        <textarea name="message" rows="3" required></textarea>
-
-        <button type="submit">Send</button>
+        <label for="f-name">Your name</label>
+        <input id="f-name" type="text" name="name" required>
+        <label for="f-email">Your email</label>
+        <input id="f-email" type="email" name="email" required>
+        <label for="f-msg">Message</label>
+        <textarea id="f-msg" name="message" rows="3" required></textarea>
+        <button type="submit">Send message</button>
       </form>
     </div>
-
   </div>
+  <p class="colophon">© 2026 Medhat Elmorsy</p>
 </footer>
 
 </body>
