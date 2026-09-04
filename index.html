@@ -54,11 +54,12 @@
 
 <div class="topbar">
   <div class="topbar-inner">
-    <a class="wordmark" href="index.html">Medhat Elmorsy<span>Structural Engineering · MIT</span></a>
+    <a class="wordmark" href="index.html">Medhat Elmorsy<span>Earthquake Engineering · MIT</span></a>
     <nav aria-label="Main">
       <ul>
         <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="research-and-publications.html">Research &amp; Publications</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
         <li><a href="teaching.html">Teaching</a></li>
         <li><a href="cv.html">CV</a></li>
       </ul>
@@ -71,16 +72,41 @@
 
     <section class="hero">
       <h1>Medhat Elmorsy</h1>
-      <p class="standfirst">Let's Build Better</p>
+      <p class="standfirst">Building the experiments that tell us whether our seismic models are right.</p>
       <p class="affil">
         <strong>Postdoctoral Fellow</strong>, Department of Civil and Environmental Engineering,
-        Massachusetts Institute of Technology · Cambridge, MA ·
+        Massachusetts Institute of Technology<br>
+        SNSF Postdoc.Mobility Fellow · Cambridge, MA ·
         <a href="mailto:melmorsy@mit.edu">melmorsy@mit.edu</a>
+      </p>
+      <p>
+        My work sits at the intersection of <strong>earthquake engineering, structural dynamics, and digital
+        construction</strong>. I combine centrifuge shake table testing, additive manufacturing, and nonlinear
+        simulation to produce benchmark experimental data that numerical models can actually be validated against,
+        and I use that evidence to design better structures &mdash; from optimized reinforced concrete load paths
+        to low-cost earthquake-resistant housing.
       </p>
       <p>
         I hold a Doctor of Science from ETH Zurich, an M.S. in Civil Engineering from the University of Alaska
         Anchorage, and a B.S. in Civil Engineering from Mansoura University, where I graduated first in my class.
       </p>
+    </section>
+
+    <section>
+      <h2>Research directions</h2>
+      <ul class="directions">
+        <li><a href="research.html#validation">Benchmark experiments for validating seismic models</a>
+          <p>Centrifuge shake table tests of many identical small-scale structures, so models can be checked against scatter rather than a single specimen.</p></li>
+        <li><a href="research.html#additive">Additive manufacturing for small-scale reinforced concrete</a>
+          <p>3D-printed steel reinforcement and matched micro-concrete, characterized from bond behavior up to cyclic tests of columns and joints.</p></li>
+        <li><a href="research.html#optimization">Seismic topology optimization and robotic prototyping</a>
+          <p>Bimodular optimization of concrete structures under earthquake loading, with the resulting layouts physically prototyped.</p></li>
+        <li><a href="research.html#affordable">Affordable earthquake-resistant construction</a>
+          <p>Interlocking compressed earth block dwellings and low-cost isolation, designed together as one system.</p></li>
+        <li><a href="research.html#uncertainty">Modeling uncertainty and how it propagates</a>
+          <p>How much of a shifted fragility curve is the building, and how much is the modeler.</p></li>
+      </ul>
+      <p style="margin-top:1.1rem"><a href="research.html">Read more, with test videos and photos</a></p>
     </section>
 
     <section id="career-timeline" aria-label="Career timeline">
@@ -109,7 +135,7 @@
           <h3>URM benchmark dataset published in <i>Earthquake Spectra</i></h3>
           <p>Centrifuge shake table tests of 3D-printed unreinforced masonry structures, released as an open
              benchmark for validating numerical models.
-             <a href="research-and-publications.html#J1">See&nbsp;[J1]</a></p>
+             <a href="publications.html#J1">See&nbsp;[J1]</a></p>
         </div>
       </div>
 
@@ -119,7 +145,7 @@
           <h3>Interlocking-block dwellings paper in <i>Construction and Building Materials</i></h3>
           <p>Shear behavior and centrifuge seismic modeling of corbel dwellings built from interlocking
              compressed earth blocks, aimed at affordable seismic-resistant housing.
-             <a href="research-and-publications.html#J2">See&nbsp;[J2]</a></p>
+             <a href="publications.html#J2">See&nbsp;[J2]</a></p>
         </div>
       </div>
     </section>
@@ -152,13 +178,13 @@
           <span class="pub-venue">Journal of Structural Engineering</span>, 2025.
         </li>
       </ul>
-      <p style="margin-top:1.1rem"><a href="research-and-publications.html#journal-articles">All publications</a></p>
+      <p style="margin-top:1.1rem"><a href="publications.html#journal-articles">All publications</a></p>
     </section>
 
   </main>
 
   <aside class="sidebar">
-    <img src="photo1.jpg" alt="Medhat Elmorsy" class="sidebar-photo" width="500" height="500">
+    <img src="photo1.jpg" alt="Medhat Elmorsy" class="sidebar-photo" width="1000" height="1328">
 
     <h3>Links</h3>
     <ul class="sidebar-links">
@@ -168,7 +194,15 @@
       <li><img src="icons/github.svg" alt="" class="icon"><a href="https://github.com/MMElmorsy" target="_blank" rel="noopener">GitHub</a></li>
       <li><img src="icons/linkedin.svg" alt="" class="icon"><a href="https://www.linkedin.com/in/medhat-elmorsy-a3806593" target="_blank" rel="noopener">LinkedIn</a></li>
     </ul>
-  
+
+    <h3>Contact</h3>
+    <p class="sidebar-contact">
+      Department of Civil and Environmental Engineering<br>
+      Massachusetts Institute of Technology<br>
+      77 Massachusetts Avenue<br>
+      Cambridge, MA 02139, USA<br>
+      <a href="mailto:melmorsy@mit.edu">melmorsy@mit.edu</a>
+    </p>
   </aside>
 </div>
 
@@ -182,6 +216,17 @@
         77 Massachusetts Avenue, Cambridge, MA 02139, USA<br>
         <a href="mailto:melmorsy@mit.edu">melmorsy@mit.edu</a>
       </p>
+    </div>
+    <div class="footer-right">
+      <form class="footer-form" action="https://formspree.io/f/mvzzbkrk" method="POST">
+        <label for="f-name">Your name</label>
+        <input id="f-name" type="text" name="name" required>
+        <label for="f-email">Your email</label>
+        <input id="f-email" type="email" name="email" required>
+        <label for="f-msg">Message</label>
+        <textarea id="f-msg" name="message" rows="3" required></textarea>
+        <button type="submit">Send message</button>
+      </form>
     </div>
   </div>
   <p class="colophon">© 2026 Medhat Elmorsy</p>

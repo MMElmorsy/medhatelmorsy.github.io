@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Medhat Elmorsy</title>
+<meta name="description" content="Research directions of Medhat Elmorsy: benchmark centrifuge experiments for seismic model validation, additive manufacturing for physical modeling, seismic topology optimization, and affordable earthquake-resistant construction.">
+<link rel="canonical" href="https://www.medhatelmorsy.com/research.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Research — Medhat Elmorsy">
+<meta property="og:description" content="Centrifuge shake table testing, 3D-printed reinforcement, seismic topology optimization, and low-cost earthquake-resistant housing.">
+<meta property="og:url" content="https://www.medhatelmorsy.com/research.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="alternate icon" type="image/jpeg" href="logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="wordmark" href="index.html">Medhat Elmorsy<span>Earthquake Engineering · MIT</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" aria-current="page">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<header class="page-head">
+  <div class="page-head-inner">
+    <h1>Research</h1>
+    <p>We ask numerical models to predict how buildings fail, but we rarely test them against experiments at the
+       scale of a whole structure. My work builds those experiments &mdash; and uses what they show to design
+       structures that hold up, including where budgets are smallest.</p>
+  </div>
+</header>
+
+<main class="wrap" id="main" style="padding-top:3rem">
+
+  <section>
+    <ul class="pub-jump">
+      <li><a href="#validation">Benchmark experiments</a></li>
+      <li><a href="#additive">Additive manufacturing</a></li>
+      <li><a href="#optimization">Seismic topology optimization</a></li>
+      <li><a href="#affordable">Affordable construction</a></li>
+      <li><a href="#uncertainty">Modeling uncertainty</a></li>
+      <li><a href="#collaborators">Collaborators</a></li>
+    </ul>
+  </section>
+
+  <!-- ============================================================
+       THEME 1
+       ============================================================ -->
+  <section class="theme-block" id="validation">
+    <h2>Benchmark experiments for validating seismic models</h2>
+    <p class="lede">
+      Nonlinear building models are calibrated on isolated component tests, then trusted to predict how a
+      complete structure behaves in an earthquake. Almost no experimental data exists at that scale, and none of
+      it is repeated often enough to say anything statistical.
+    </p>
+    <p>
+      I combine geotechnical centrifuge shake table testing with 3D printing, which makes it feasible to build
+      and test many nominally identical small-scale structures instead of one expensive specimen. The result is
+      a dataset with enough repetitions to support probabilistic validation: not "does the model match this
+      test," but "how much of the scatter in the real structures does the model reproduce?" The unreinforced
+      masonry dataset from this work is openly available, and formed the basis of a blind prediction contest
+      organized with the Pacific Earthquake Engineering Research Center, where independent teams predicted the
+      response before the results were released.
+    </p>
+
+    <!-- MEDIA SLOT: YouTube. Replace VIDEO_ID with the id from the share link
+         (youtu.be/VIDEO_ID or watch?v=VIDEO_ID), then delete the placeholder below. -->
+    <figure class="media-figure">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+                title="Centrifuge shake table test of a 3D-printed unreinforced masonry building"
+                loading="lazy" allowfullscreen></iframe>
+      </div>
+      <figcaption>Centrifuge shake table test of a 3D-printed unreinforced masonry building. <!-- add scale, motion, and what to watch for --></figcaption>
+    </figure>
+
+    <figure class="media-figure">
+      <div class="gallery">
+        <figure><div class="placeholder">Photo slot &mdash; printed masonry specimen</div></figure>
+        <figure><div class="placeholder">Photo slot &mdash; model on the centrifuge platform</div></figure>
+        <figure><div class="placeholder">Photo slot &mdash; crack pattern after testing</div></figure>
+      </div>
+      <figcaption>Specimen fabrication, instrumentation, and post-test damage.</figcaption>
+    </figure>
+
+    <p class="readmore">
+      <strong>Papers:</strong>
+      <a href="publications.html#J1">[J1]</a> benchmark dataset in <i>Earthquake Spectra</i> ·
+      <a href="publications.html#C1">[C1]</a>, <a href="publications.html#C4">[C4]</a> centrifuge modelling of URM ·
+      blind prediction contest results in preparation.<br>
+      <strong>Data:</strong> <a href="#">link to the dataset repository</a>.
+    </p>
+  </section>
+
+  <!-- ============================================================
+       THEME 2
+       ============================================================ -->
+  <section class="theme-block" id="additive">
+    <h2>Additive manufacturing for small-scale reinforced concrete</h2>
+    <p class="lede">
+      Reduced-scale reinforced concrete has always been limited by the reinforcement. At centrifuge scale you
+      cannot bend and tie a realistic cage, so models end up with reinforcement that is the wrong geometry, the
+      wrong strength, or bonded the wrong way.
+    </p>
+    <p>
+      I developed additively manufactured steel reinforcement paired with a matched micro-concrete, and
+      characterized it the way any new structural material has to be characterized: tensile response first,
+      then bond, then component behavior. Printed cages were used to build columns and beam-column joints that
+      were tested under cyclic loading and compared against their full-scale counterparts. The outcome is a
+      repeatable production route for small-scale RC specimens, which is what makes statistically meaningful
+      testing programs possible in the first place.
+    </p>
+
+    <!-- MEDIA SLOT: self-hosted clip. Keep files small (see notes at the bottom of this file). -->
+    <figure class="media-figure">
+      <div class="video-frame">
+        <video controls preload="none" poster="media/am-cage-poster.jpg">
+          <source src="media/am-cage.mp4" type="video/mp4">
+          Your browser does not support embedded video.
+        </video>
+      </div>
+      <figcaption>Cyclic test of a small-scale column built with 3D-printed reinforcement.</figcaption>
+    </figure>
+
+    <figure class="media-figure">
+      <div class="gallery">
+        <figure><div class="placeholder">Photo slot &mdash; printed reinforcement cage</div></figure>
+        <figure><div class="placeholder">Photo slot &mdash; cage in formwork before casting</div></figure>
+        <figure><div class="placeholder">Photo slot &mdash; tested joint specimen</div></figure>
+      </div>
+      <figcaption>From printed cage to cast specimen to tested joint.</figcaption>
+    </figure>
+
+    <p class="readmore">
+      <strong>Papers:</strong>
+      <a href="publications.html#J6">[J6]</a> tensile and bond behavior ·
+      <a href="publications.html#J4">[J4]</a> columns ·
+      <a href="publications.html#J5">[J5]</a> beam-column joints ·
+      <a href="publications.html#C2">[C2]</a>, <a href="publications.html#C3">[C3]</a> centrifuge-scale application.
+    </p>
+  </section>
+
+  <!-- ============================================================
+       THEME 3
+       ============================================================ -->
+  <section class="theme-block" id="optimization">
+    <h2>Seismic topology optimization and robotic prototyping</h2>
+    <p class="lede">
+      Current work at MIT, funded by an SNSF Postdoc.Mobility fellowship. Topology optimization has reshaped how
+      we design in steel and in additive metals, but concrete resists it: the material behaves very differently
+      in tension and compression, and seismic demand is dynamic and nonlinear rather than a static load case.
+    </p>
+    <p>
+      I am developing a bimodular optimization formulation &mdash; one that treats concrete as principally a
+      compression material and reinforcement as principally a tension material &mdash; driven by earthquake
+      loading. The obstacle is cost: a fully transient nonlinear analysis inside an optimization loop is far too
+      slow, so a large part of the work is finding stiffness-state approximations that keep the physics that
+      matters while making thousands of design iterations tractable. Optimized layouts are then prototyped
+      physically using additive manufacturing and robotic fabrication, so the designs are checked against what
+      can actually be built rather than only against the objective function.
+    </p>
+
+    <figure class="media-figure">
+      <div class="placeholder">Media slot &mdash; optimization animation, or a figure showing the evolving load path</div>
+      <figcaption>Material layout evolving over the optimization, for a frame under seismic loading.</figcaption>
+    </figure>
+
+    <p class="readmore">
+      <strong>Status:</strong> journal paper in preparation. Funded by the Swiss National Science Foundation
+      (CHF 186,666, 2026&ndash;2028); host institution MIT.
+    </p>
+  </section>
+
+  <!-- ============================================================
+       THEME 4
+       ============================================================ -->
+  <section class="theme-block" id="affordable">
+    <h2>Affordable earthquake-resistant construction</h2>
+    <p class="lede">
+      Most of the world's seismic risk sits in buildings that will never be touched by an engineer. Techniques
+      that assume a design office, a testing lab, and an industrial supply chain do not reach them.
+    </p>
+    <p>
+      I work on structural systems that stay within the means of low-income regions. One line is corbel
+      dwellings assembled from interlocking compressed earth blocks: blocks that lock together without mortar
+      and can be produced on site from local soil. I characterized their shear behavior and tested complete
+      dwellings on a centrifuge shake table. A second line is low-cost seismic isolation, combining rolling-ball
+      bearings with sand-sandwich layers, tested both in the centrifuge and on a three-directional shake table.
+      The direction I am most interested in is designing the two together, so the isolation system and the
+      superstructure are conceived as one system rather than an expensive technology adapted downward.
+    </p>
+
+    <figure class="media-figure">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+                title="Shake table test of an isolated masonry dwelling"
+                loading="lazy" allowfullscreen></iframe>
+      </div>
+      <figcaption>Shake table test of a masonry dwelling on low-cost rolling isolation.</figcaption>
+    </figure>
+
+    <figure class="media-figure">
+      <div class="gallery">
+        <figure><div class="placeholder">Photo slot &mdash; interlocking compressed earth blocks</div></figure>
+        <figure><div class="placeholder">Photo slot &mdash; corbel dwelling assembly</div></figure>
+        <figure><div class="placeholder">Photo slot &mdash; rolling isolation bearings</div></figure>
+      </div>
+      <figcaption>Interlocking blocks, corbel geometry, and the isolation hardware.</figcaption>
+    </figure>
+
+    <p class="readmore">
+      <strong>Papers:</strong>
+      <a href="publications.html#J2">[J2]</a> shear behavior and centrifuge modeling of corbel dwellings ·
+      rolling isolation studies in preparation (<a href="publications.html#in-preparation">P2</a>,
+      <a href="publications.html#in-preparation">P3</a>).
+    </p>
+  </section>
+
+  <!-- ============================================================
+       THEME 5
+       ============================================================ -->
+  <section class="theme-block" id="uncertainty">
+    <h2>Modeling uncertainty and how it propagates</h2>
+    <p class="lede">
+      Beam-column joints are among the least constrained parts of a reinforced concrete building model, and the
+      assumptions made there travel all the way to a collapse assessment.
+    </p>
+    <p>
+      Working from large databases of joint tests, I built probabilistic models of joint behavior and then
+      quantified how that uncertainty affects the seismic response of low-rise RC frames, using record-wise
+      Latin hypercube sampling to keep modeling uncertainty separable from record-to-record variability. The
+      practical question behind it: when a fragility curve shifts, how much of the shift is the building and how
+      much is the modeler?
+    </p>
+
+    <figure class="media-figure">
+      <div class="placeholder">Figure slot &mdash; fragility curves with and without joint modeling uncertainty</div>
+      <figcaption>Effect of joint modeling uncertainty on the seismic response of low-rise RC frames.</figcaption>
+    </figure>
+
+    <p class="readmore">
+      <strong>Papers:</strong>
+      <a href="publications.html#J3">[J3]</a> propagation to frame response ·
+      <a href="publications.html#J8">[J8]</a>, <a href="publications.html#J9">[J9]</a> joint models ·
+      <a href="publications.html#J10">[J10]</a>, <a href="publications.html#J11">[J11]</a> database reviews.
+    </p>
+  </section>
+
+  <!-- ============================================================
+       COLLABORATORS
+       ============================================================ -->
+  <section id="collaborators">
+    <h2>Collaborators</h2>
+    <p>This work is done with experimentalists, materials scientists, and computational groups across several
+       institutions.</p>
+    <ul class="collab-list">
+      <li><span class="who">Josephine Carstensen</span> &mdash; <span class="where">Civil and Environmental Engineering, MIT</span>. Topology optimization for seismic design.</li>
+      <li><span class="who">Michalis Vassiliou</span> &mdash; <span class="where">School of Civil Engineering, NTUA (formerly ETH Zurich)</span>. Physical modeling, rocking and isolated structures.</li>
+      <li><span class="who">Ioannis Anastasopoulos</span> &mdash; <span class="where">ETH Zurich</span>. Centrifuge shake table testing.</li>
+      <li><span class="who">Dimitrios Vamvatsikos</span> &mdash; <span class="where">School of Civil Engineering, NTUA</span>. Performance-based assessment and uncertainty propagation.</li>
+      <li><span class="who">Christian Leinenbach</span> &mdash; <span class="where">Empa</span>. Additive manufacturing of steel reinforcement.</li>
+      <li><span class="who">Kristina Shea</span> &mdash; <span class="where">ETH Zurich</span>. Computational design and fabrication of interlocking block systems.</li>
+      <li><span class="who">Khalid Mosalam and Selim Günay</span> &mdash; <span class="where">PEER, UC Berkeley</span>. Blind prediction contest on URM model validation.</li>
+      <li><span class="who">Wael M. Hassan</span> &mdash; <span class="where">University of Alaska Anchorage</span>. Probabilistic beam-column joint modeling.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <h2>Get in touch</h2>
+      <p>
+        Department of Civil and Environmental Engineering<br>
+        Massachusetts Institute of Technology<br>
+        77 Massachusetts Avenue, Cambridge, MA 02139, USA<br>
+        <a href="mailto:melmorsy@mit.edu">melmorsy@mit.edu</a>
+      </p>
+    </div>
+    <div class="footer-right">
+      <form class="footer-form" action="https://formspree.io/f/mvzzbkrk" method="POST">
+        <label for="f-name">Your name</label>
+        <input id="f-name" type="text" name="name" required>
+        <label for="f-email">Your email</label>
+        <input id="f-email" type="email" name="email" required>
+        <label for="f-msg">Message</label>
+        <textarea id="f-msg" name="message" rows="3" required></textarea>
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+  </div>
+  <p class="colophon">© 2026 Medhat Elmorsy</p>
+</footer>
+
+<!--
+  ADDING MEDIA
+  ------------
+  YouTube:  replace VIDEO_ID in the iframe src with the id from the share link.
+            Unlisted videos embed exactly the same as public ones.
+  Local:    put compressed .mp4 files in media/ and a .jpg poster frame beside each one.
+            Keep every clip under roughly 15 MB; GitHub caps single files at 100 MB and
+            large media makes the page slow. To compress with ffmpeg:
+              ffmpeg -i input.mov -vf "scale=1280:-2" -c:v libx264 -crf 26 -preset slow -an media/clip.mp4
+              ffmpeg -i media/clip.mp4 -ss 2 -vframes 1 media/clip-poster.jpg
+  Photos:   resize to about 1600 px on the long edge before committing.
+  Delete every .placeholder block as you fill its slot.
+-->
+
+</body>
+</html>
