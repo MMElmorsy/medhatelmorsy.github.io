@@ -126,10 +126,12 @@
       testing programs possible in the first place.
     </p>
 
-    <!-- MEDIA SLOT: self-hosted clip. Keep files small (see notes at the bottom of this file). -->
+    <!-- MEDIA SLOT: self-hosted clip that plays itself when scrolled into view.
+         Muted is required — browsers block autoplay with sound. Keep the file small. -->
     <figure class="media-figure">
       <div class="video-frame">
-        <video controls preload="none" poster="media/am-cage-poster.jpg">
+        <video data-autoplay controls muted loop playsinline preload="none"
+               poster="media/am-cage-poster.jpg">
           <source src="media/am-cage.mp4" type="video/mp4">
           Your browser does not support embedded video.
         </video>
@@ -313,6 +315,10 @@
   ------------
   YouTube:  replace VIDEO_ID in the iframe src with the id from the share link.
             Unlisted videos embed exactly the same as public ones.
+  Autoplay: add  data-autoplay muted loop playsinline  to a <video> and it starts when
+            scrolled into view and pauses when it leaves. Muted is mandatory — browsers
+            block autoplay with sound. Use it only for short silent loops (5-20 s).
+            YouTube embeds cannot be autoplayed reliably; leave those click-to-play.
   Local:    put compressed .mp4 files in media/ and a .jpg poster frame beside each one.
             Keep every clip under roughly 15 MB; GitHub caps single files at 100 MB and
             large media makes the page slow. To compress with ffmpeg:
@@ -321,6 +327,37 @@
   Photos:   resize to about 1600 px on the long edge before committing.
   Delete every .placeholder block as you fill its slot.
 -->
+
+<script>
+// Play muted clips when they scroll into view, pause them when they leave.
+// Skipped entirely for visitors who ask for reduced motion; controls stay available.
+(function () {
+  var clips = document.querySelectorAll('video[data-autoplay]');
+  if (!clips.length) return;
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+      !('IntersectionObserver' in window)) {
+    clips.forEach(function (v) { v.preload = 'metadata'; });
+    return;
+  }
+
+  var seen = new WeakSet();
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      var v = entry.target;
+      if (entry.isIntersecting) {
+        if (!seen.has(v)) { v.preload = 'auto'; v.load(); seen.add(v); }
+        var p = v.play();
+        if (p) p.catch(function () { /* browser declined; poster and controls remain */ });
+      } else if (!v.paused) {
+        v.pause();
+      }
+    });
+  }, { threshold: 0.5 });
+
+  clips.forEach(function (v) { observer.observe(v); });
+})();
+</script>
 
 </body>
 </html>
