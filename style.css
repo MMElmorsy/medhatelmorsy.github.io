@@ -602,3 +602,40 @@ footer {
 .directions a { font-weight: 600; text-decoration: none; font-family: "IBM Plex Serif", Georgia, serif; }
 .directions a:hover { text-decoration: underline; }
 .directions p { margin: 0.15rem 0 0; color: var(--slate); font-size: 0.95rem; }
+
+/* ====== Two-up layout for research themes ====== */
+
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 56px;
+  align-items: start;
+}
+
+/* Inside the grid the column is the measure, so drop the prose width caps */
+.theme-grid .theme-block .lede,
+.theme-grid .theme-block p,
+.theme-grid .media-figure,
+.theme-grid .readmore,
+.theme-grid figcaption { max-width: 100%; }
+
+.theme-grid .theme-block > h2 { font-size: 1.32rem; }
+.theme-grid .theme-block .lede { font-size: 1.02rem; }
+
+/* Every gridded theme keeps its top rule, including the first one */
+.theme-grid .theme-block:first-of-type { border-top: 1px solid var(--line); padding-top: 2.2rem; }
+
+/* Thumbnails stay three-up but shorter, so a narrow column doesn't stack them */
+.theme-grid .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.theme-grid .gallery img { height: 110px; }
+.theme-grid .placeholder { min-height: 110px; padding: 1rem 0.6rem; font-size: 0.8rem; }
+
+/* A theme that should span the full width: add class="wide" to its section */
+.theme-grid .theme-block.wide { grid-column: 1 / -1; }
+
+@media (max-width: 900px) {
+  .theme-grid { grid-template-columns: 1fr; column-gap: 0; }
+  .theme-grid .gallery { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+  .theme-grid .gallery img { height: 190px; }
+  .theme-grid .placeholder { min-height: 190px; }
+}
