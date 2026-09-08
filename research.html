@@ -218,21 +218,26 @@
   <section class="theme-block" id="uncertainty">
     <h2>Modeling uncertainty and how it propagates</h2>
     <p class="lede">
-      Beam-column joints are among the least constrained parts of a reinforced concrete building model, and the
-      assumptions made there travel all the way to a collapse assessment.
+      The seismic analysis of structural systems is fraught with
+      uncertainties, both aleatory and epistemic. Aleatory uncertainties are intrinsic to the unpredictable nature of seismic
+      events and remain immutable. Conversely, epistemic uncertainties stem from incomplete knowledge, such as uncertain
+      model parameters or modeling methods. Modeling method uncertainty can manifest as bias,a systematic
+      deviation from true performance values and/or as variance,
+      adding noise to the seismic response. Thus, considering both
+      model parameter (intra-model) and model type (inter-model)
+      sources of uncertainty is key.
     </p>
     <p>
-      Working from large databases of joint tests, I built probabilistic models of joint behavior and then
-      quantified how that uncertainty affects the seismic response of low-rise RC frames, using record-wise
-      Latin hypercube sampling to keep modeling uncertainty separable from record-to-record variability. The
-      practical question behind it: when a fragility curve shifts, how much of the shift is the building and how
-      much is the modeler?
+      I aim to address that through test-informed nonlinear probabilistic models. This means test database should created and complemented with new experiments.
+      Then, uncertaies can be reduced and/or quantified.
     </p>
-
-    <figure class="media-figure">
-      <div class="placeholder">Figure slot &mdash; fragility curves with and without joint modeling uncertainty</div>
+      <figure class="media-figure">
+      <img src="media/joint-uncertainty-fragility.jpg"
+           alt="Fragility curves for a low-rise RC frame, with and without beam-column joint modeling uncertainty"
+           loading="lazy" width="1200" height="800">
       <figcaption>Effect of joint modeling uncertainty on the seismic response of low-rise RC frames.</figcaption>
     </figure>
+    
 
     <p class="readmore">
       <strong>Papers:</strong>
@@ -276,17 +281,7 @@
         <a href="mailto:melmorsy@mit.edu">melmorsy@mit.edu</a>
       </p>
     </div>
-    <div class="footer-right">
-      <form class="footer-form" action="https://formspree.io/f/mvzzbkrk" method="POST">
-        <label for="f-name">Your name</label>
-        <input id="f-name" type="text" name="name" required>
-        <label for="f-email">Your email</label>
-        <input id="f-email" type="email" name="email" required>
-        <label for="f-msg">Message</label>
-        <textarea id="f-msg" name="message" rows="3" required></textarea>
-        <button type="submit">Send message</button>
-      </form>
-    </div>
+    
   </div>
   <p class="colophon">© 2026 Medhat Elmorsy</p>
 </footer>
