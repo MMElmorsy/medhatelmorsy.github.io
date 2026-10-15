@@ -639,3 +639,22 @@ footer {
   .theme-grid .gallery img { height: 190px; }
   .theme-grid .placeholder { min-height: 190px; }
 }
+
+/* ====== Append these to the end of style.css ====== */
+
+/* YouTube icon sitting inside a .button */
+.icon-on-button {
+  height: 16px;
+  vertical-align: -3px;
+  margin-right: 7px;
+  margin-left: 0;
+}
+
+/* Profile links row in the footer */
+.footer-social {
+  margin-top: 0.9rem;
+  font-size: 0.88rem;
+  color: #a9bccb;
+}
+.footer-social a { color: #dfe7ee; text-decoration: none; }
+.footer-social a:hover { color: #fff; text-decoration: underline; }
